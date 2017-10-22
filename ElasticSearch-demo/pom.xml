@@ -4,47 +4,45 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.ljl</groupId>
-	<artifactId>search</artifactId>
+	<artifactId>elasticsearch-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>pom</packaging>
+	<packaging>jar</packaging>
 
-	<name>Search</name>
-	<description>Search</description>
+	<name>ElasticSearch-demo</name>
+	<description>elasticSearch-demo</description>
 
 	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.8.RELEASE</version>
+			<groupId>com.ljl</groupId>
+			<artifactId>search</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-
-	<modules>
-		<!-- elasticsearch 学习 -->
-		<module>elasticsearch-demo</module>
-		<!-- lucene  学习 -->
-		<module>lucene-demo</module>
-	</modules>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<lucene.version>7.1.0</lucene.version>
 	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 
-
 	<build>
 		<plugins>
-		<!--	Maven插件，可以将项目打包成可执行jar
-			如果您使用Spring Boot启动器 parent pom，则只需要添加这个插件，
-			除非您要更改parent中定义的设置，否则不需要进行配置-->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>

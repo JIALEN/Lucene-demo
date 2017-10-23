@@ -1,4 +1,4 @@
-package com.ljl.lucene.demo.until;
+package com.ljl.lucene.demo.curd;
 
 import java.nio.file.Paths;
 
@@ -18,7 +18,7 @@ import org.apache.lucene.store.FSDirectory;
 import org.junit.Before;
 import org.junit.Test;
 
-public class IndeCURD {
+public class IndeCURD01 {
 
 	private String ids[]={"1","2","3"};
 	private String citys[]={"qingdao","nanjing","shanghai"};

@@ -1,4 +1,4 @@
-package com.ljl.lucene.demo.until;
+package com.ljl.lucene.demo.helloworld;
 
 import java.io.File;
 import java.io.FileReader;

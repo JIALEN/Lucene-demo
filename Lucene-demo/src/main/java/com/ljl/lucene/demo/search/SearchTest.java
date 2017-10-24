@@ -1,4 +1,4 @@
-package com.ljl.lucene.demo.search;
+package com.alen.lucene.demo.search;
 
 
 import java.nio.file.Paths;
@@ -185,7 +185,7 @@ public class SearchTest {
 	@Test
 	public void testFuzzyQuery()throws Exception{
 		String searchField="contents";
-		String q="ljlxx";
+		String q="alenxx";
 		Term t=new Term(searchField,q);
 		Query query=new FuzzyQuery(t);
 		TopDocs hits=is.search(query, 10);

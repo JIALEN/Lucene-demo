@@ -1,9 +1,9 @@
-package com.ljl.lucene.demo.constants;
+package com.alen.lucene.demo.constants;
 
 /**
  * 枚举值
  *
- * @author lijialun
+ * @author JIALEN
  * @create 2017-10-20 16:34
  **/
 public class LuceneConstants {

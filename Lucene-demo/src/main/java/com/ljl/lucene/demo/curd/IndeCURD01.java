@@ -1,4 +1,4 @@
-package com.ljl.lucene.demo.curd;
+package com.alen.lucene.demo.curd;
 
 import java.nio.file.Paths;
 
@@ -89,8 +89,8 @@ public class IndeCURD01 {
 	public void testDeleteBeforeMerge()throws Exception{
 		IndexWriter writer=getWriter();
 		System.out.println("删除前："+writer.numDocs());
-		writer.deleteDocuments(new Term("id","1"));
-		writer.commit();
+		writer.deleteDocuments(new Term("id","1"));// 强制删除此时删除的文档并不会被完全删除，而是存储在一个回收站中的，可以恢复
+		writer.commit();// writer.commit(); //更改索引要提交，和提交数据库事务一个概念，真正的删除
 		System.out.println("writer.maxDoc()："+writer.maxDoc());
 		System.out.println("writer.numDocs()："+writer.numDocs());
 		writer.close();
@@ -106,8 +106,9 @@ public class IndeCURD01 {
 	public void testDeleteAfterMerge()throws Exception{
 		IndexWriter writer=getWriter();
 		System.out.println("删除前："+writer.numDocs());
-		writer.deleteDocuments(new Term("id","1"));
-		writer.forceMergeDeletes(); // 强制删除
+		writer.deleteDocuments(new Term("id","1"));// 强制删除此时删除的文档并不会被完全删除，而是存储在一个回收站中的，可以恢复
+		writer.forceMergeDeletes(); //强制合并删除的索引信息，索引量大的时候不推荐使用，真正的删除
+		// writer.commit(); //更改索引要提交，和提交数据库事务一个概念，真正的删除
 		writer.commit();
 		System.out.println("writer.maxDoc()："+writer.maxDoc());
 		System.out.println("writer.numDocs()："+writer.numDocs());

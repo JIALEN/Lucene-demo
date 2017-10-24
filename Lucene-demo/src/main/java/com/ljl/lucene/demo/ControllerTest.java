@@ -1,4 +1,4 @@
-package com.ljl.lucene.demo;
+package com.alen.lucene.demo;
 
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
@@ -20,7 +20,7 @@ import java.io.IOException;
 /**
  * luncene测试
  *
- * @author lijialun
+ * @author JIALEN
  * @create 2017-10-20 14:31
  **/
 //@RestController和@

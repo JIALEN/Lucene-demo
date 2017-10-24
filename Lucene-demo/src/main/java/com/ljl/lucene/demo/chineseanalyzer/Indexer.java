@@ -1,4 +1,4 @@
-package com.ljl.lucene.demo.chineseanalyzer;
+package com.alen.lucene.demo.chineseanalyzer;
 
 
 import org.apache.lucene.analysis.cn.smart.SmartChineseAnalyzer;

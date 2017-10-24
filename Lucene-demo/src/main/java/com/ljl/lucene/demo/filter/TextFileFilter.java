@@ -1,4 +1,4 @@
-package com.ljl.lucene.demo.filter;
+package com.alen.lucene.demo.filter;
 
 import javax.swing.filechooser.FileFilter;
 import java.io.File;
@@ -6,7 +6,7 @@ import java.io.File;
 /**
  * 过滤器
  *
- * @author lijialun
+ * @author JIALEN
  * @create 2017-10-20 16:36
  **/
 public class TextFileFilter extends FileFilter {

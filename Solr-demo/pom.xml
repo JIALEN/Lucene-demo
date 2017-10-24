@@ -4,34 +4,54 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.alen</groupId>
-	<artifactId>elasticsearch-demo</artifactId>
+	<artifactId>solr-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>ElasticSearch-demo</name>
-	<description>elasticSearch-demo</description>
+	<name>Solr-demo</name>
+	<description>solr-demo</description>
 
 	<parent>
-			<groupId>com.alen</groupId>
-			<artifactId>search</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<groupId>com.alen</groupId>
+		<artifactId>search</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
 	<dependencies>
+	<!--	<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-solr</artifactId>
+		</dependency>
+-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-redis</artifactId>
+			<groupId>org.apache.solr</groupId>
+			<artifactId>solr-solrj</artifactId>
+			<version>${solr.version}</version>
 		</dependency>
+
+
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.9.3</version>
+		</dependency>
+
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.9</version>
 		</dependency>
 	</dependencies>
 

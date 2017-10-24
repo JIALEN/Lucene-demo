@@ -1,4 +1,4 @@
-package com.ljl.lucene.demo.helloworld;
+package com.alen.lucene.demo.helloworld;
 
 import java.nio.file.Paths;
 

@@ -1,4 +1,4 @@
-package com.ljl.lucene.demo.search;
+package com.alen.lucene.demo.search;
 
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;

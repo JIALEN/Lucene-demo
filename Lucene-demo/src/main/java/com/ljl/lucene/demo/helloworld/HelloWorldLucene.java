@@ -1,4 +1,4 @@
-package com.ljl.lucene.demo.helloworld;
+package com.alen.lucene.demo.helloworld;
 
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
@@ -19,7 +19,7 @@ import java.io.IOException;
 /**
  * 最简单的dmeo
  *
- * @author lijialun
+ * @author JIALEN
  * @create 2017-10-21 13:54
  **/
 public class HelloWorldLucene {

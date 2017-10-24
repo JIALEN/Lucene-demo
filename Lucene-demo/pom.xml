@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 
-	<groupId>com.ljl</groupId>
+	<groupId>com.alen</groupId>
 	<artifactId>lucene-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -13,17 +13,11 @@
 	<description>lucene-demo</description>
 
 	<parent>
-		<groupId>com.ljl</groupId>
+		<groupId>com.alen</groupId>
 		<artifactId>search</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version>
-		<lucene.version>7.1.0</lucene.version>
-	</properties>
 
 	<dependencies>
 		<dependency>

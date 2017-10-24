@@ -1,4 +1,4 @@
-package com.ljl.lucene.demo.curd;
+package com.alen.lucene.demo.curd;
 
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
@@ -20,7 +20,7 @@ import java.nio.file.Paths;
 
 /**
  * 索引的增删改查
- * @author lijialun
+ * @author JIALEN
  * @create 2017-10-21 16:29
  **/
 public class indexCRUD02 {
